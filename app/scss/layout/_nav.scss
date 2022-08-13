@@ -11,9 +11,21 @@
   width: 100%;
   max-width: var(--max_width);
 
+  @media screen and (max-width: 1200px) {
+    padding: 0 1rem;
+  }
+
   .nav_lists {
     display: flex;
+    flex-direction: column;
+    position: fixed;
     gap: 2rem;
+
+    @media screen and (min-width: 800px) {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+    }
 
     a {
       color: var(--heading-color);
@@ -33,7 +45,7 @@
   border: none;
   cursor: pointer;
 
-  @media screen and (min-width: 750px) {
+  @media screen and (min-width: 800px) {
     display: none;
   }
 

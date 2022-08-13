@@ -22,6 +22,7 @@ body {
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 h1 {
@@ -72,7 +73,7 @@ svg {
 }
 
 :root {
-  --max_width: 1100px;
+  --max_width: 1200px;
   --transition-3ms: 0.3s ease-in-out;
 }
 
@@ -111,9 +112,23 @@ svg {
   width: 100%;
   max-width: var(--max_width);
 }
+@media screen and (max-width: 1200px) {
+  .nav_container {
+    padding: 0 1rem;
+  }
+}
 .nav_container .nav_lists {
   display: flex;
+  flex-direction: column;
+  position: fixed;
   gap: 2rem;
+}
+@media screen and (min-width: 800px) {
+  .nav_container .nav_lists {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
 }
 .nav_container .nav_lists a {
   color: var(--heading-color);
@@ -130,7 +145,7 @@ svg {
   border: none;
   cursor: pointer;
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 800px) {
   .mobile_nav-toggle {
     display: none;
   }
