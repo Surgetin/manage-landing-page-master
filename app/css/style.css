@@ -111,6 +111,7 @@ svg {
   transform: translateX(-50%);
   width: 100%;
   max-width: var(--max_width);
+  overflow: hidden;
 }
 @media screen and (max-width: 1200px) {
   .nav_container {
@@ -123,7 +124,7 @@ svg {
   position: fixed;
   gap: 2rem;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 820px) {
   .nav_container .nav_lists {
     display: flex;
     flex-direction: row;
@@ -145,7 +146,7 @@ svg {
   border: none;
   cursor: pointer;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 820px) {
   .mobile_nav-toggle {
     display: none;
   }
@@ -175,7 +176,7 @@ svg {
   font-weight: 600;
   cursor: pointer;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 820px) {
   .btn {
     display: block;
   }
