@@ -68,9 +68,15 @@
 
 .btn {
   border: none;
+  display: none;
   background-color: var(--primary-color);
   color: var(--pale_red);
   padding: 1rem 2.2rem;
   border-radius: 30px;
   font-weight: 600;
+  cursor: pointer;
+
+  @media screen and (min-width: 800px) {
+    display: block;
+  }
 }
