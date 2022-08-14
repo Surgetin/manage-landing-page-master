@@ -7,11 +7,22 @@
 .container {
   max-width: var(--max_width);
   margin-inline: auto;
+  text-align: center;
 }
 
 .colums {
   display: grid;
-  gap: 5rem;
+  gap: 2rem;
+
+  .right_side {
+    grid-column-start: 1;
+    grid-row-start: 1;
+
+    @media screen and (min-width: 750px) {
+      grid-column-start: 2;
+      grid-row-start: 1;
+    }
+  }
 
   @media screen and (min-width: 750px) {
     grid-auto-flow: column;
@@ -20,6 +31,6 @@
 }
 
 .main > .container .colums {
-  margin-top: 11rem;
+  margin-top: 7rem;
   align-items: center;
 }
