@@ -1,6 +1,22 @@
+@use "../globals/variables" as *;
+@use "../globals/colors" as *;
+
 .main_section {
     margin-top: 6rem;
     margin-bottom: 4rem;
+
+    .container {
+        padding: 0;
+    }
+
+    .left_side {
+        padding: 0 1rem;
+    }
+
+    .right_side {
+        margin-top: 2rem;
+        padding-left: 1rem;
+    }
 
     h2 {
         font-size: 2rem;
@@ -8,5 +24,33 @@
 
     .right_side {
         text-align: left;
+    }
+}
+
+.right_side-lists {
+
+    h3 {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        font-size: .9rem;
+        background-color: var(--pale_red);
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+
+        span {
+            padding: .4rem 1.2rem;           
+            color: var(--gray);
+            background-color: var(--primary-color);
+            border-radius: 30px;
+        }
+    }
+
+    p {
+        margin: .8rem 0;
+        font-size: .9rem;
+        line-height: 1.8;
+        padding-right: 1rem;
     }
 }

@@ -9,6 +9,7 @@
   max-width: var(--max_width);
   margin-inline: auto;
   text-align: center;
+  padding: 0 1rem;
 
   @media screen and (min-width: 750px) {
     text-align: left;
