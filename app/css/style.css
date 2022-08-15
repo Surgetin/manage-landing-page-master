@@ -237,12 +237,6 @@ p {
   }
 }
 
-.left_side p {
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  line-height: 1.8;
-}
-
 .main_section {
   margin-top: 6rem;
   margin-bottom: 4rem;
@@ -251,7 +245,13 @@ p {
   padding: 0;
 }
 .main_section .left_side {
+  align-items: center;
   padding: 0 1rem;
+}
+@media screen and (min-width: 1200px) {
+  .main_section .left_side {
+    padding: 0;
+  }
 }
 .main_section .right_side {
   margin-top: 2rem;
@@ -260,8 +260,6 @@ p {
 @media screen and (min-width: 750px) {
   .main_section .right_side {
     margin-top: 0;
-    padding-left: 2.5rem;
-    padding-right: 6rem;
   }
 }
 .main_section h2 {
@@ -269,6 +267,22 @@ p {
 }
 .main_section .right_side {
   text-align: left;
+}
+
+@media screen and (min-width: 750px) {
+  .main .left_side h2 {
+    width: 80%;
+  }
+}
+.main .left_side p {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+@media screen and (min-width: 750px) {
+  .main .left_side p {
+    width: 65%;
+  }
 }
 
 .right_side-lists h3 {
@@ -296,5 +310,10 @@ p {
   margin: 0.8rem 0;
   font-size: 0.9rem;
   line-height: 1.8;
-  padding-right: 1rem;
+}
+@media screen and (min-width: 750px) {
+  .right_side-lists p {
+    padding-left: 4.5rem;
+    padding-right: 3.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */

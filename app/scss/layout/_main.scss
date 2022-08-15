@@ -10,7 +10,12 @@
     }
 
     .left_side {
+        align-items: center;
         padding: 0 1rem;
+
+        @media screen and (min-width: 1200px) {
+            padding: 0;
+        }
     }
 
     .right_side {
@@ -19,8 +24,6 @@
 
         @media screen and (min-width: 750px) {
             margin-top: 0;
-            padding-left: 2.5rem;
-            padding-right: 6rem;
         }
     }
 
@@ -30,6 +33,25 @@
 
     .right_side {
         text-align: left;
+    }
+}
+
+.main .left_side {
+
+    h2 {
+        @media screen and (min-width: 750px) {
+            width: 80%;
+        }
+    }
+
+    p {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        line-height: 1.8;
+
+        @media screen and (min-width: 750px) {
+            width: 65%;
+        }
     }
 }
 
@@ -61,6 +83,10 @@
         margin: .8rem 0;
         font-size: .9rem;
         line-height: 1.8;
-        padding-right: 1rem;
+
+        @media screen and (min-width: 750px) {
+            padding-left: 4.5rem;
+            padding-right: 3.5rem;
+        }
     }
 }
