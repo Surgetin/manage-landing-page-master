@@ -18,7 +18,7 @@
     .right_side {
         @media screen and (min-width: 750px) {
             display: grid;
-        justify-content: end;
+            justify-content: end;
         }
     }
 
@@ -41,5 +41,6 @@
         background-color: var(--gray);
         color: var(--primary-color);
         margin-right: 0.8rem;
+        box-shadow: hsl(12deg 63% 47%) 0px 10px 15px -7px;
     }
 }
