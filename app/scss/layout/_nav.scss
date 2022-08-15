@@ -58,7 +58,7 @@
     margin: -1px;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
-    white-space: nowrap; /* added line */
+    white-space: nowrap;
     border: 0;
   }
 
@@ -67,17 +67,12 @@
   }
 }
 
-.btn {
-  border: none;
+.nav_container > .btn {
   display: none;
-  background-color: var(--primary-color);
-  color: var(--pale_red);
-  padding: 1rem 2.2rem;
-  border-radius: 30px;
-  font-weight: 600;
-  cursor: pointer;
 
   @media screen and (min-width: 820px) {
     display: block;
+    margin-right: .8rem;
   }
 }
+

@@ -1,0 +1,17 @@
+@use "../globals/variables" as *;
+@use "../globals/colors" as *;
+
+.hero_heading {
+    font-size: 2.3rem;
+
+    @media screen and (min-width: 750px) {
+        font-size: 3rem;
+        width: 90%;
+      }
+}
+
+.left_side p{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
