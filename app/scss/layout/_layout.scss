@@ -1,5 +1,9 @@
 @use "../globals/variables" as *;
 
+.header {
+  position: relative;
+}
+
 .container {
   max-width: var(--max_width);
   margin-inline: auto;
@@ -52,4 +56,9 @@
   font-weight: 600;
   cursor: pointer;
   box-shadow: var(--primary-color) 0px 10px 15px -7px;
+  transition: var(--transition-3ms);
+
+  &:hover {
+    background-color: hsl(12deg 87% 73%);
+  }
 }

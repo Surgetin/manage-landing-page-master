@@ -1,0 +1,45 @@
+@use "../globals/variables" as *;
+@use "../globals/colors" as *;
+
+.simplify {
+    background-color: var(--primary-color);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    @media screen and (min-width: 750px) {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .colums {
+        align-items: center;
+    }
+
+    .right_side {
+        @media screen and (min-width: 750px) {
+            display: grid;
+        justify-content: end;
+        }
+    }
+
+    .left_side .simplify-p {
+        color: var(--gray);
+        font-size: 2.2rem;
+        font-weight: 500;
+        max-width: 300px;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        line-height: 1.4;
+
+        @media screen and (min-width: 750px) {
+            max-width: 90%;
+            margin: 0;
+        }
+    }
+
+    .btn_inverted {
+        background-color: var(--gray);
+        color: var(--primary-color);
+        margin-right: 0.8rem;
+    }
+}

@@ -1,0 +1,6 @@
+@use "../globals/variables" as *;
+@use "../globals/colors" as *;
+
+.footer {
+    background-color: var(--dark-blue);
+}
