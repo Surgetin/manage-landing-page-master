@@ -16,6 +16,12 @@
     .right_side {
         margin-top: 2rem;
         padding-left: 1rem;
+
+        @media screen and (min-width: 750px) {
+            margin-top: 0;
+            padding-left: 2.5rem;
+            padding-right: 6rem;
+        }
     }
 
     h2 {
@@ -38,6 +44,10 @@
         background-color: var(--pale_red);
         border-top-left-radius: 30px;
         border-bottom-left-radius: 30px;
+
+        @media screen and (min-width: 750px) {
+            background-color: transparent;
+        }
 
         span {
             padding: .4rem 1.2rem;           

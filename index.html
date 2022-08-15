@@ -21,49 +21,51 @@
 
   <body>
     <header class="header">
-      <div class="container nav_container">
-        <div class="logo">
-          <a href="#"><img src="/images/logo.svg" alt="logo" /></a>
+      <div class="nav_container">
+        <div class="nav">
+          <div class="logo">
+            <a href="#"><img src="/images/logo.svg" alt="logo" /></a>
+          </div>
+          <button
+            class="mobile_nav-toggle"
+            aria-controls="navigation-button"
+            aria-expanded="false"
+          >
+            <span class="screen-reader">Menu</span>
+            <img
+              class="open-menu"
+              src="/images/icon-hamburger.svg"
+              alt=""
+              aria-hidden="true"
+            />
+            <img
+              class="close-menu"
+              src="/images/icon-close.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </button>
+          <nav class="navigation">
+            <ul class="nav_lists" role="list" aria-label="Primary">
+              <li class="nav_list-item">
+                <a href="#" class="nav_link">Pricing</a>
+              </li>
+              <li class="nav_list-item">
+                <a href="#" class="nav_link">Product</a>
+              </li>
+              <li class="nav_list-item">
+                <a href="#" class="nav_link">About Us</a>
+              </li>
+              <li class="nav_list-item">
+                <a href="#" class="nav_link">Careers</a>
+              </li>
+              <li class="nav_list-item">
+                <a href="#" class="nav_link">Community</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="btn" aria-label="button">Get Started</button>
         </div>
-        <button
-          class="mobile_nav-toggle"
-          aria-controls="navigation-button"
-          aria-expanded="false"
-        >
-          <span class="screen-reader">Menu</span>
-          <img
-            class="open-menu"
-            src="/images/icon-hamburger.svg"
-            alt=""
-            aria-hidden="true"
-          />
-          <img
-            class="close-menu"
-            src="/images/icon-close.svg"
-            alt=""
-            aria-hidden="true"
-          />
-        </button>
-        <nav class="navigation">
-          <ul class="nav_lists" role="list" aria-label="Primary">
-            <li class="nav_list-item">
-              <a href="#" class="nav_link">Pricing</a>
-            </li>
-            <li class="nav_list-item">
-              <a href="#" class="nav_link">Product</a>
-            </li>
-            <li class="nav_list-item">
-              <a href="#" class="nav_link">About Us</a>
-            </li>
-            <li class="nav_list-item">
-              <a href="#" class="nav_link">Careers</a>
-            </li>
-            <li class="nav_list-item">
-              <a href="#" class="nav_link">Community</a>
-            </li>
-          </ul>
-        </nav>
-        <button class="btn" aria-label="button">Get Started</button>
       </div>
     </header>
 
