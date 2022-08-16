@@ -5,6 +5,7 @@
     .container {
         max-width: 100%;
         background-color: var(--dark-blue);
+        text-align: left;
     }
 
     .wrapper {
@@ -63,10 +64,10 @@
     }
 
     .footer_nav-container-left {
+        display: grid;
         grid-area: 2 / 1;
 
         @media screen and (min-width: 750px) {
-            display: grid;
             grid-area: 2 / 2;
             grid-row: span 2;
             justify-content: start;
@@ -74,11 +75,11 @@
     }
 
     .footer_nav-container-right {
+        display: grid;
         grid-area: 2 / 2;
 
         @media screen and (min-width: 750px) {
             height: 100%;
-            display: grid;
             justify-content: end;
             grid-area: 2 / 3;
             grid-row: span 2;
@@ -152,6 +153,7 @@
     .copyright {
         grid-area: 5 / -1;
         grid-column: span 2;
+        margin: 0 auto;
         margin-top: 3rem;
         margin-bottom: 2rem;
 

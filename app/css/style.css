@@ -86,13 +86,53 @@ p {
   --transition-3ms: 0.3s ease-in-out;
 }
 
+.carousel_section .container {
+  max-width: 1800px;
+}
+
+.carousel_container {
+  display: flex;
+  overflow: hidden;
+  gap: 15rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+.carousel_container .card_container {
+  margin: 0 auto;
+  margin-left: -11rem;
+  text-align: center;
+  min-width: 500px;
+  /* background-color: var(--pale_red); */
+}
+.carousel_container .card_container .card_avatar-image img {
+  width: 80px;
+  margin: 0 auto;
+}
+.carousel_container .card_avatar-name {
+  color: var(--heading-color);
+  font-weight: bold;
+  margin: 1.5rem 0;
+}
+.carousel_container .card_avatar-quote {
+  color: var(--text-color);
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
 .carousel_heading {
+  text-align: center;
   font-size: 1.9rem;
+}
+
+.carousel_btn {
+  display: flex;
+  margin: 0 auto;
 }
 
 .footer .container {
   max-width: 100%;
   background-color: var(--dark-blue);
+  text-align: left;
 }
 .footer .wrapper {
   margin: 0 auto;
@@ -153,23 +193,23 @@ p {
   box-shadow: none;
 }
 .footer .footer_nav-container-left {
+  display: grid;
   grid-area: 2/1;
 }
 @media screen and (min-width: 750px) {
   .footer .footer_nav-container-left {
-    display: grid;
     grid-area: 2/2;
     grid-row: span 2;
     justify-content: start;
   }
 }
 .footer .footer_nav-container-right {
+  display: grid;
   grid-area: 2/2;
 }
 @media screen and (min-width: 750px) {
   .footer .footer_nav-container-right {
     height: 100%;
-    display: grid;
     justify-content: end;
     grid-area: 2/3;
     grid-row: span 2;
@@ -237,6 +277,7 @@ p {
 .footer .copyright {
   grid-area: 5/-1;
   grid-column: span 2;
+  margin: 0 auto;
   margin-top: 3rem;
   margin-bottom: 2rem;
 }
@@ -455,7 +496,7 @@ svg path {
     background-position: -30rem 65rem, 48rem -10rem;
   }
 }
-@media screen and (min-width: 1700px) {
+@media screen and (min-width: 1950px) {
   .main:before {
     display: none;
   }
@@ -579,6 +620,7 @@ svg path {
   background-color: var(--primary-color);
   padding-top: 4rem;
   padding-bottom: 4rem;
+  margin-top: 8rem;
 }
 @media screen and (min-width: 750px) {
   .simplify {
@@ -634,6 +676,18 @@ svg path {
 }
 @media screen and (min-width: 750px) {
   .simplify:before {
-    background-position: -5rem -3rem, 65rem -42rem;
+    background-size: 500px 500px, 500px 500px;
+    background-position: 5rem -3rem, 68rem -23rem;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .simplify:before {
+    background-size: 500px 500px, 500px 500px;
+    background-position: 15rem -3rem, 78rem -23rem;
+  }
+}
+@media screen and (min-width: 1950px) {
+  .simplify:before {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
