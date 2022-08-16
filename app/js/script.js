@@ -17,3 +17,20 @@ document.querySelectorAll(".nav_list-item").forEach((e) =>
     navItem.classList.remove("active");
   })
 );
+
+// Slider
+
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 1,
+  initialSlide: 1,
+  spaceBetween: 30,
+  slidesPerGroup: 1,
+  centeredSlides: true,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+});
