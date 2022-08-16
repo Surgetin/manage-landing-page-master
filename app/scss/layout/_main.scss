@@ -71,7 +71,7 @@
 
         span {
             padding: .4rem 0;
-            width: 60px;           
+            width: 60px;
             color: var(--gray);
             background-color: var(--primary-color);
             border-radius: 30px;
@@ -90,6 +90,40 @@
     }
 }
 
-.carousel_heading {
-    font-size: 1.9rem;
+
+.main {
+    position: relative;
+}
+
+.main:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background-image:
+        url("/images/bg-tablet-pattern.svg"),
+        url("/images/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;
+    background-position: 5rem -6rem, 15rem 28rem;
+    background-size: 450px 450px, 350px 350px;
+    opacity: .9;
+
+    @media screen and (min-width: 450px) {
+        background-position: 8rem -5rem, 18rem 35rem;
+        background-size: 500px 500px, 350px 350px;
+    }
+
+    @media screen and (min-width: 750px) {
+        background-size: 850px 850px;
+        background-position: -35rem 65rem, 40rem -10rem;
+    }
+
+    @media screen and (min-width: 1300px) {
+        background-size: 850px 850px;
+        background-position: -30rem 65rem, 48rem -10rem;
+    }
+
+    @media screen and (min-width: 1700px) {
+        display: none;
+    }
 }

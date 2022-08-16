@@ -3,24 +3,11 @@
 
 .hero_heading {
     font-size: 2.3rem;
+    margin-top: 1.5rem;
 
     @media screen and (min-width: 750px) {
         font-size: 3rem;
         width: 90%;
-    }
-}
-
-.footer_right-container {
-    input {
-        padding: .8rem 1rem;
-        border: none;    
-        border-radius: 30px;
-
-        &::placeholder {
-            color: var(--text-color);
-        }
-    }
-    .btn {
-        box-shadow: none;
+        margin-top: 0;
     }
 }

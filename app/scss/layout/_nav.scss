@@ -8,7 +8,8 @@
   overflow: hidden;
   transition: var(--transition-3ms);
   background-color: transparent;
-  
+  z-index: 999;
+
   &.active {
     padding: .8rem 1rem;
     background-color: var(--bg-color);
@@ -58,6 +59,7 @@
       position: relative;
       padding: 0;
       width: 100%;
+      background-color: var(--bg-color);
       top: inherit;
       left: inherit;
       box-shadow: none;
@@ -105,7 +107,7 @@
   }
 }
 
-.nav > .btn {
+.nav>.btn {
   display: none;
 
   @media screen and (min-width: 820px) {

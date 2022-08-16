@@ -1,37 +1,119 @@
 @use "../globals/variables" as *;
 @use "../globals/colors" as *;
 
-.footer .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: repeat(4, 1fr) ;
-    background-color: var(--dark-blue);
+.footer {
+    .container {
+        max-width: 100%;
+        background-color: var(--dark-blue);
+    }
 
-    .footer_right-container {
+    .wrapper {
+        margin: 0 auto;
+        max-width: var(--max_width);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, auto);
+
+        @media screen and (min-width: 750px) {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr 1fr;
+        }
+    }
+
+    .footer_input-container {
         grid-area: 1 / 1;
         grid-column: span 2;
         margin-top: 3rem;
+        margin-bottom: 3rem;
 
         form {
             display: flex;
             justify-content: center;
             gap: .5rem;
+
+            input {
+                padding: .8rem 1rem;
+                border: none;
+                outline: none;
+                border-radius: 30px;
+
+                &::placeholder {
+                    color: var(--text-color);
+                }
+            }
+
+            .btn {
+                box-shadow: none;
+            }
         }
     }
 
-    .footer_left-container {
-        grid-area: 4 / -1;
+    .footer_nav-container-left {
+        grid-area: 2 / 1;
+    }
+
+    .footer_nav-container-right {
+        grid-area: 2 / 2;
+    }
+
+    .fotter_nav-lists {
+        display: grid;
+        justify-content: center;
+        justify-items: start;
+        gap: .8rem;
+
+        .footer_nav-item a {
+            color: var(--gray);
+            font-size: .9rem;
+            transition: var(--transition-3ms);
+
+            &:hover {
+                color: var(--primary-color);
+            }
+        }
+    }
+
+
+    .social_links-container {
+        grid-area: 3 / 1;
         grid-column: span 2;
+        margin: 0 auto;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
 
-        .logo {
+        .social_lists {
             display: flex;
-            justify-content: center;
+            gap: 2rem;
+
+            img {
+                width: 28px;
+            }
         }
     }
 
-    p {
+    .logo_container {
+        grid-area: 4 / 1;
+        grid-column: span 2;
+        margin: 0 auto;
+    }
+
+    .copyright {
         grid-area: 5 / -1;
         grid-column: span 2;
+        margin-top: 3rem;
         margin-bottom: 2rem;
+
+        p {
+            font-size: .8rem;
+        }
     }
+}
+
+svg:hover path {
+    fill: black;
+    transition: all ease 0.3s;
+}
+
+svg path {
+    transition: all ease 0.3s;
 }
