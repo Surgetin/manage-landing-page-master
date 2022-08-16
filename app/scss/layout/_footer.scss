@@ -15,8 +15,10 @@
         grid-template-rows: repeat(5, auto);
 
         @media screen and (min-width: 750px) {
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(4, auto);
             grid-template-rows: 1fr 1fr;
+            align-items: center;
+            padding: 4rem 0;
         }
     }
 
@@ -26,10 +28,22 @@
         margin-top: 3rem;
         margin-bottom: 3rem;
 
+        @media screen and (min-width: 750px) {
+            display: grid;
+            height: 100%;
+            grid-area: 1 / 4;
+            margin: 0;
+            justify-content: end;
+        }
+
         form {
             display: flex;
             justify-content: center;
             gap: .5rem;
+
+            @media screen and (min-width: 750px) {
+                height: 70%;
+            }
 
             input {
                 padding: .8rem 1rem;
@@ -50,17 +64,33 @@
 
     .footer_nav-container-left {
         grid-area: 2 / 1;
+
+        @media screen and (min-width: 750px) {
+            display: grid;
+            grid-area: 2 / 2;
+            grid-row: span 2;
+            justify-content: start;
+        }
     }
 
     .footer_nav-container-right {
         grid-area: 2 / 2;
+
+        @media screen and (min-width: 750px) {
+            height: 100%;
+            display: grid;
+            justify-content: end;
+            grid-area: 2 / 3;
+            grid-row: span 2;
+            margin: 0;
+        }
     }
 
     .fotter_nav-lists {
         display: grid;
         justify-content: center;
-        justify-items: start;
         gap: .8rem;
+
 
         .footer_nav-item a {
             color: var(--gray);
@@ -81,12 +111,28 @@
         margin-top: 2.5rem;
         margin-bottom: 2.5rem;
 
+        @media screen and (min-width: 750px) {
+            display: grid;
+            grid-area: 2/1;
+            align-items: end;
+            margin: 0;
+            height: 100%;
+        }
+
         .social_lists {
             display: flex;
             gap: 2rem;
 
+            @media screen and (min-width: 750px) {
+                gap: 1rem;
+            }
+
             img {
                 width: 28px;
+
+                @media screen and (min-width: 750px) {
+                    width: 20px;
+                }
             }
         }
     }
@@ -95,6 +141,12 @@
         grid-area: 4 / 1;
         grid-column: span 2;
         margin: 0 auto;
+
+        @media screen and (min-width: 750px) {
+            width: 100%;
+            height: 100%;
+            grid-area: 1 / 1;
+        }
     }
 
     .copyright {
@@ -102,6 +154,15 @@
         grid-column: span 2;
         margin-top: 3rem;
         margin-bottom: 2rem;
+
+        @media screen and (min-width: 750px) {
+            display: grid;
+            height: 100%;
+            grid-area: 2 / 4;
+            justify-content: end;
+            align-items: end;
+            margin: 0;
+        }
 
         p {
             font-size: .8rem;
