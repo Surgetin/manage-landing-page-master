@@ -101,6 +101,7 @@ p {
 .carousel_section .container {
   max-width: 100%;
   overflow: hidden;
+  padding-bottom: 1rem;
 }
 
 .carousel_container {
