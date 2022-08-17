@@ -101,6 +101,7 @@ p {
 .carousel_section .container {
   max-width: 1600px;
   overflow: hidden;
+  padding: 0 0.5rem;
   padding-bottom: 1rem;
 }
 
@@ -156,11 +157,12 @@ p {
 }
 
 .swiper-slide {
+  cursor: pointer;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgb(247, 247, 247);
+  background-color: rgb(248, 248, 248);
 }
 .swiper-slide img {
   width: 70px;
