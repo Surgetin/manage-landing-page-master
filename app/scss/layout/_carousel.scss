@@ -14,7 +14,7 @@
 
 /* Slider */
 .carousel_section .container {
-    max-width: 100%;
+    max-width: 1600px;
     overflow: hidden;
     padding-bottom: 1rem;
 }
@@ -31,6 +31,10 @@
     margin: 0 auto;
     margin-top: 3rem;
     margin-bottom: 2rem;
+
+    @media screen and (min-width: 750px) {
+        max-width: 500px;
+    }
 }
 
 .name {
@@ -38,6 +42,12 @@
     font-weight: bold;
     margin-top: 4rem;
     margin-bottom: 1rem;
+
+    @media screen and (min-width: 750px) {
+        margin: 0 auto;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    }
 }
 
 .quote {
@@ -46,6 +56,11 @@
     height: 100%;
     line-height: 1.6;
     font-size: .9rem;
+    text-align: center;
+
+    @media screen and (min-width: 750px) {
+        margin: 0 auto;
+    }
 }
 
 .swiper-wrapper {
@@ -62,8 +77,12 @@
     img {
         width: 70px;
         position: absolute;
-        top: -35px;
-        left: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        top: -15%;
+        left: 0;
+        right: 0;
+        text-align: center;
     }
 }
 
