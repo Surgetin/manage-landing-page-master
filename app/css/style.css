@@ -541,6 +541,18 @@ svg path {
     background-size: 500px 500px, 350px 350px;
   }
 }
+@media screen and (min-width: 520px) {
+  .main:before {
+    background-position: 9rem -5rem, 23rem 37rem;
+    background-size: 600px 600px, 350px 350px;
+  }
+}
+@media screen and (min-width: 590px) {
+  .main:before {
+    background-position: 4rem -5rem, 32rem 38rem;
+    background-size: 700px 700px, 400px 400px;
+  }
+}
 @media screen and (min-width: 750px) {
   .main:before {
     background-size: 850px 850px;
