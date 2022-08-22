@@ -6,7 +6,7 @@
   position: fixed;
   padding: 2rem 1rem;
   overflow: hidden;
-  transition: var(--transition-3ms);
+  transition: $transition-3ms;
   background-color: transparent;
   z-index: 999;
 
@@ -18,11 +18,11 @@
 
   .nav {
     width: 100%;
-    max-width: var(--max_width);
+    max-width: $max_width;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: var(--max_width);
+    max-width: $max_width;
     margin: 0 auto;
   }
 
@@ -70,7 +70,7 @@
 
     a {
       color: var(--heading-color);
-      transition: var(--transition-3ms);
+      transition: $transition-3ms;
       font-weight: 500;
 
       &:hover {

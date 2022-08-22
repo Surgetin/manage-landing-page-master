@@ -23,7 +23,7 @@
         padding-left: 1rem;
         text-align: left;
 
-        @media screen and (min-width: 750px) {
+        @media screen and (min-width: $mobile_width) {
             margin-top: 0;
         }
     }
@@ -36,7 +36,7 @@
 .left_side {
 
     h2 {
-        @media screen and (min-width: 750px) {
+        @media screen and (min-width: $mobile_width) {
             width: 80%;
         }
     }
@@ -46,7 +46,7 @@
         margin-bottom: 2rem;
         line-height: 1.8;
 
-        @media screen and (min-width: 750px) {
+        @media screen and (min-width: $mobile_width) {
             width: 65%;
         }
     }
@@ -64,7 +64,7 @@
         border-top-left-radius: 30px;
         border-bottom-left-radius: 30px;
 
-        @media screen and (min-width: 750px) {
+        @media screen and (min-width: $mobile_width) {
             font-size: 1rem;
             background-color: transparent;
         }
@@ -83,7 +83,7 @@
         font-size: .9rem;
         line-height: 1.8;
 
-        @media screen and (min-width: 750px) {
+        @media screen and (min-width: $mobile_width) {
             padding-left: 4.8rem;
             padding-right: 3.5rem;
         }
@@ -123,7 +123,7 @@
         background-size: 700px 700px, 400px 400px;
     }
 
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: $mobile_width) {
         background-size: 850px 850px;
         background-position: -35rem 65rem, 40rem -10rem;
     }

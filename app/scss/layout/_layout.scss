@@ -5,12 +5,12 @@
 }
 
 .container {
-  max-width: var(--max_width);
+  max-width: $max_width;
   margin-inline: auto;
   text-align: center;
   padding: 0 1rem;
 
-  @media screen and (min-width: 750px) {
+  @media screen and (min-width: $mobile_width) {
     text-align: left;
   }
 
@@ -26,23 +26,23 @@
     grid-column-start: 1;
     grid-row-start: 1;
 
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: $mobile_width) {
       grid-column-start: 2;
       grid-row-start: 1;
     }
   }
 
-  @media screen and (min-width: 750px) {
+  @media screen and (min-width: $mobile_width) {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
   }
 }
 
-.main > .container .colums {
+.main>.container .colums {
   margin-top: 7rem;
   align-items: center;
 
-  @media screen and (min-width: 750px) {
+  @media screen and (min-width: $mobile_width) {
     margin-top: 12rem;
   }
 }
@@ -56,7 +56,7 @@
   font-weight: 600;
   cursor: pointer;
   box-shadow: var(--primary-color) 0px 10px 15px -7px;
-  transition: var(--transition-3ms);
+  transition: $transition-3ms;
 
   &:hover {
     background-color: hsl(12deg 87% 73%);

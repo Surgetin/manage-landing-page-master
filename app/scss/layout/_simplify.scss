@@ -7,7 +7,7 @@
     padding-bottom: 4rem;
     margin-top: 3rem;
 
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: $mobile_width) {
         padding-top: 3rem;
         padding-bottom: 3rem;
     }
@@ -17,7 +17,7 @@
     }
 
     .right_side {
-        @media screen and (min-width: 750px) {
+        @media screen and (min-width: $mobile_width) {
             display: grid;
             justify-content: end;
         }
@@ -32,7 +32,7 @@
         margin-bottom: 1rem;
         line-height: 1.4;
 
-        @media screen and (min-width: 750px) {
+        @media screen and (min-width: $mobile_width) {
             max-width: 90%;
             margin: 0;
         }
@@ -63,7 +63,7 @@
     background-position: -46rem 0, 60rem -42rem;
     opacity: .1;
 
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: $mobile_width) {
         background-size: 500px 500px, 500px 500px;
         background-position: 5rem -3rem, 68rem -23rem;
     }
